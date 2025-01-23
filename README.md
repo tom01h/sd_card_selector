@@ -35,6 +35,8 @@
 ![](resources/基板表.jpg)  
 ![](resources/基板裏.jpg)
 
+uSDカードスロットのフットプリントはギリギリ使えるくらいにずれています
+
 ### SDカードリーダーの改造
 カードリーダーの基板を取り出します  
 ![](resources/カードリーダー.jpg)
@@ -48,9 +50,9 @@ uSDスロットのカードデテクトを壊します
 ![](resources/デテクト接続.jpg)
 
 ### ピンヘッダ(J2)の接続
-- 1PINはラズパイピンヘッダの5V出力
-- 2PINはPSWピンヘッダの1PIN
-- 3PINはPSWピンヘッダの2PIN (GND)
+- 1PINはPSWピンヘッダの1PIN
+- 2PINはPSWピンヘッダの2PIN (GND)
+- 3PINはラズパイピンヘッダの5V出力
 
 ![](resources/電源接続.jpg)
 
