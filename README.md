@@ -10,6 +10,8 @@
 - PCとUSB-UART的なもの（正確にはUSB CDC ACM）で繋ぐ
     - CH552マイコンを使って制御している
 
+## 使い方
+
 ## 部品
 - [USBハブ](https://ja.aliexpress.com/item/1005007046850790.html?spm=a2g0o.order_list.order_list_main.20.7e81585a35DO0V&gatewayAdapt=glo2jpn)
 - [USBカードリーダー](https://ja.aliexpress.com/item/1005007634731826.html?spm=a2g0o.order_list.order_list_main.30.7e81585a35DO0V&gatewayAdapt=glo2jpn)
@@ -53,7 +55,10 @@ uSDスロットのカードデテクトを壊します
 - 1PINはPSWピンヘッダの1PIN
 - 2PINはPSWピンヘッダの2PIN (GND)
 - 3PINはラズパイピンヘッダの5V出力
+    - 電源はUSBからもとっているので、この接続がなくても動きます
 
 ![](resources/電源接続.jpg)
 
 ## CH552のソフト
+[ch55xduino](https://github.com/DeqingSun/ch55xduino)を使って、CH552にArduino IDEからプログラム(Arduino/SDSEL/SDSEL.ino)を書きみます  
+プログラムの書き込みには[WCHISPTool](https://www.wch.cn/downloads/WCHISPTool_Setup_exe.html)が必要です
