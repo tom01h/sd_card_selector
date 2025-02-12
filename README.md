@@ -11,6 +11,60 @@
     - CH552マイコンを使って制御している
 
 ## 使い方
+こんな感じに組み立てます  
+USB-UARTもあったほうが便利です  
+![](resources/電源接続.jpg)
+
+ラズパイの電源を入れる前にUSBハブをPCに繋ぎます  
+ターミナルの表示は以下  
+この状態ではPCからuSDカードにアクセスできます  
+```
+Raspberry Pi Remote
+USB Card Reader
+USB> 
+```
+
+`rpi`を入力してuSDの接続をラズパイに切り替えます  
+この状態ではPCからuSDカードにアクセスできません  
+```
+USB> rpi
+Raspberry Pi
+Pi Off>
+```
+
+ラスパイの電源を入れて、ターミナルでエンターを入力すると下のような表示になります  
+```
+Pi Off>
+Undefined Command
+Pi On>
+```
+
+ラスパイをシャットダウンして、ターミナルでエンターを入力すると下のような表示になります  
+```
+Pi On>
+Undefined Command
+Pi Off>
+```
+
+`pon`を入力してラズパイの電源をONにします  
+ターミナルでエンターを入力すると下のような表示になります  
+```
+Pi Off> pon
+Power ON
+Pi Off>
+Undefined Command
+Pi On>
+```
+
+`Pi Off`の状態から`usb`コマンドを入力すると、PCからuSDカードにアクセス出来るようになります  
+```
+Pi Off> usb
+USB Card Reader
+USB>
+```
+
+`Pi On`状態で`shutdown`コマンド実行で、強制的にラズパイの電源をOFFにできます（OSのシャットダウンではありません）  
+その後、PCからuSDカードにアクセス出来るようになります  
 
 ## 部品
 - [USBハブ](https://ja.aliexpress.com/item/1005007046850790.html?spm=a2g0o.order_list.order_list_main.20.7e81585a35DO0V&gatewayAdapt=glo2jpn)
